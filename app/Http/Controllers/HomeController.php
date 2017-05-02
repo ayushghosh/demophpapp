@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Dev1;
+use App\Dev2;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,14 @@ class HomeController extends Controller
     	$dev1 = new Dev1;
 
     	return $dev1->ok();
+    }
+
+
+    public function dev2(Request $req)
+    {
+    	$dev2 = new Dev2;
+
+    	return $dev2->ok();
     }
 
 
